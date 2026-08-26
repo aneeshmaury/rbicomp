@@ -13,17 +13,17 @@ export default function App() {
       <img
         src="https://i.ibb.co/G3cbztWd/Chat-GPT-Image-Aug-26-2026-07-30-32-AM.png"
         alt="Demo emblem"
-        className="h-[115px] w-[115px] object-contain"
+        className="h-[80px] w-[115px] object-contain"
       />
     </div>
 
     {/* Right side text */}
     <div className="text-left">
-      <div className="text-[25px] underline font-bold tracking-wide text-[#111111]">
+      <div className="text-[15px] underline font-bold tracking-wide text-[#111111]">
         शिकायत प्रबंध प्रणाली
       </div>
 
-      <div className="mt-[5px] text-[25px] underline font-bold tracking-wide text-[#111111]">
+      <div className="mt-[5px] text-[15px] underline font-bold tracking-wide text-[#111111]">
         RESERVE BANK OF INDIA
       </div>
 
@@ -34,7 +34,7 @@ export default function App() {
 </div>
 
         {/* Teal banner */}
-        <div className="relative h-[170px] bg-[#11aaa2]">
+        <div className="relative mt-[-30px] h-[170px] bg-[#11aaa2]">
           <div className="absolute right-[25px] top-[18px] text-right text-white">
             <div className="text-[15px] font-normal">
               Complaint Management System
