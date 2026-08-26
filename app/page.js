@@ -5,8 +5,8 @@ export default function App() {
     <div className="min-h-screen bg-[#f8f1d8] font-sans text-[#111111]">
       {/* Demo header */}
       <header className="bg-white">
-       <div className="flex min-h-[200px] items-center justify-center px-1">
-  <div className="flex w-full max-w-[700px] items-center gap-[10px]">
+       <div className="flex mb-15 py-5 items-center justify-center px-2">
+  <div className="flex w-full max-w-[700px] items-center gap-[10px]" >
     
     {/* Left image */}
     <div className="flex-shrink-0">
@@ -34,8 +34,8 @@ export default function App() {
 </div>
 
         {/* Teal banner */}
-        <div className="relative mt-[-30px] h-[170px] bg-[#11aaa2]">
-          <div className="absolute right-[25px] top-[18px] text-right text-white">
+        <div className="relative mt-[-65px] h-[130px] bg-[#11aaa2]">
+          <div className="absolute right-[25px] top-[3px] text-right text-white">
             <div className="text-[15px] font-normal">
               Complaint Management System
             </div>
@@ -45,16 +45,16 @@ export default function App() {
             </div>
           </div>
 
-          <div className="absolute right-[25px] top-[90px] flex gap-[5px]">
-            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[20px] text-[#24516a]">
+          <div className="absolute right-[25px] top-[65px] flex gap-[5px]">
+            <div className="flex h-[35px] w-[35px] items-center justify-center bg-white text-[20px] text-[#24516a]">
               A
             </div>
 
-            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[25px] text-[#111111]">
+            <div className="flex h-[35px] w-[35px] items-center justify-center bg-white text-[25px] text-[#111111]">
               A
             </div>
 
-            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[30px] text-[#111111]">
+            <div className="flex h-[35px] w-[35px] items-center justify-center bg-white text-[30px] text-[#111111]">
               A
             </div>
           </div>
