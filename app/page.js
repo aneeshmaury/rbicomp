@@ -5,18 +5,33 @@ export default function App() {
     <div className="min-h-screen bg-[#f8f1d8] font-sans text-[#111111]">
       {/* Demo header */}
       <header className="bg-white">
-        <div className="flex min-h-[200px] items-center justify-center px-6">
-          <div className="text-center">
-            <div className="mb-2 text-[25px] underline font-bold tracking-wide text-[#111111]">
-              शिकायत प्रबंध प्रणाली
-            </div>
-            <div className=" text-[25px] underline font-bold tracking-wide text-[#111111]">
-              RESERVE BANK OF INDIA
-            </div>
+       <div className="flex min-h-[200px] items-center justify-center px-6">
+  <div className="flex w-full max-w-[700px] items-center gap-[25px]">
+    
+    {/* Left image */}
+    <div className="flex-shrink-0">
+      <img
+        src="https://i.ibb.co/G3cbztWd/Chat-GPT-Image-Aug-26-2026-07-30-32-AM.png"
+        alt="Demo emblem"
+        className="h-[115px] w-[115px] object-contain"
+      />
+    </div>
 
-            
-          </div>
-        </div>
+    {/* Right side text */}
+    <div className="text-left">
+      <div className="text-[25px] underline font-bold tracking-wide text-[#111111]">
+        शिकायत प्रबंध प्रणाली
+      </div>
+
+      <div className="mt-[5px] text-[25px] underline font-bold tracking-wide text-[#111111]">
+        RESERVE BANK OF INDIA
+      </div>
+
+    
+    </div>
+
+  </div>
+</div>
 
         {/* Teal banner */}
         <div className="relative h-[170px] bg-[#11aaa2]">
@@ -72,7 +87,7 @@ export default function App() {
             <input
               type="text"
               defaultValue=""
-              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+              className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
           </div>
 
@@ -87,7 +102,7 @@ export default function App() {
               type="text"
               defaultValue="XXXXXX6759"
               readOnly
-              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+              className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
           </div>
 
@@ -99,7 +114,7 @@ export default function App() {
 
             <input
               type="email"
-              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+              className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
           </div>
 
@@ -117,7 +132,7 @@ export default function App() {
               <select
                 id="category"
                 defaultValue=""
-                className="mt-[4px] h-[72px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+                className="mt-[4px] h-[65px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
                 <option value="" disabled>
                   Select
@@ -174,7 +189,7 @@ export default function App() {
               <select
                 id="state"
                 defaultValue=""
-                className="mt-[4px] h-[72px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+                className="mt-[4px] h-[65px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
                 <option value="" disabled>
                   Select
