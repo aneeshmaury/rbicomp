@@ -5,8 +5,8 @@ export default function App() {
     <div className="min-h-screen bg-[#f8f1d8] font-sans text-[#111111]">
       {/* Demo header */}
       <header className="bg-white">
-       <div className="flex min-h-[200px] items-center justify-center px-6">
-  <div className="flex w-full max-w-[700px] items-center gap-[25px]">
+       <div className="flex min-h-[200px] items-center justify-center px-1">
+  <div className="flex w-full max-w-[700px] items-center gap-[10px]">
     
     {/* Left image */}
     <div className="flex-shrink-0">
@@ -19,11 +19,11 @@ export default function App() {
 
     {/* Right side text */}
     <div className="text-left">
-      <div className="text-[15px] underline font-bold tracking-wide text-[#111111]">
+      <div className="text-[20px] underline font-bold tracking-wide text-[#111111]">
         शिकायत प्रबंध प्रणाली
       </div>
 
-      <div className="mt-[5px] text-[15px] underline font-bold tracking-wide text-[#111111]">
+      <div className="mt-[5px] text-[20px] underline font-bold tracking-wide text-[#111111]">
         RESERVE BANK OF INDIA
       </div>
 
