@@ -101,7 +101,7 @@ export default function App() {
             <input
               type="text"
               defaultValue=""
-              readOnly
+            
               className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
           </div>
