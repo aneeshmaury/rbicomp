@@ -7,42 +7,39 @@ export default function App() {
       <header className="bg-white">
         <div className="flex min-h-[200px] items-center justify-center px-6">
           <div className="text-center">
-            <div className="mb-2 text-[38px] font-bold tracking-wide text-[#111111]">
-              COMPLAINT PORTAL
-            </div>
-
-            <div className="text-[22px] font-medium text-[#555555]">
-              Complaint Management System
-            </div>
-
-            <div className="mt-1 text-[20px] text-[#555555]">
+            <div className="mb-2 text-[25px] underline font-bold tracking-wide text-[#111111]">
               शिकायत प्रबंध प्रणाली
             </div>
+            <div className=" text-[25px] underline font-bold tracking-wide text-[#111111]">
+              RESERVE BANK OF INDIA
+            </div>
+
+            
           </div>
         </div>
 
         {/* Teal banner */}
-        <div className="relative h-[205px] bg-[#11aaa2]">
+        <div className="relative h-[170px] bg-[#11aaa2]">
           <div className="absolute right-[25px] top-[18px] text-right text-white">
-            <div className="text-[27px] font-normal">
+            <div className="text-[15px] font-normal">
               Complaint Management System
             </div>
 
-            <div className="mt-1 text-[23px]">
+            <div className="mt-1 text-[15px]">
               शिकायत प्रबंध प्रणाली
             </div>
           </div>
 
-          <div className="absolute right-[25px] top-[105px] flex gap-[5px]">
-            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[28px] text-[#24516a]">
+          <div className="absolute right-[25px] top-[90px] flex gap-[5px]">
+            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[20px] text-[#24516a]">
               A
             </div>
 
-            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[28px] text-[#111111]">
+            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[25px] text-[#111111]">
               A
             </div>
 
-            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[28px] text-[#111111]">
+            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[30px] text-[#111111]">
               A
             </div>
           </div>
@@ -50,38 +47,38 @@ export default function App() {
       </header>
 
       {/* Main content */}
-      <main className="mx-auto w-full max-w-[825px] px-[32px] py-[34px]">
+      <main className="mx-auto w-full max-w-[825px] px-3 py-5">
         <div className="bg-white px-[40px] pb-[50px] pt-[40px]">
 
           {/* Section heading */}
-          <div className="flex h-[92px] items-center justify-center bg-[#11aaa2]">
-            <h1 className="text-center text-[45px] font-medium text-white">
+          <div className="flex h-[50px] w-[300px] items-center justify-center bg-[#11aaa2]">
+            <h1 className="text-center text-[25px] font-medium text-white">
               Complainant Details
             </h1>
           </div>
 
           {/* OTP status */}
-          <div className="mt-[42px] text-[28px] font-normal text-[#c62828]">
+          <div className="mt-[19px] text-[15px] font-normal text-[#c62828]">
             OTP is Successfully verified.
           </div>
 
           {/* Name */}
-          <div className="mt-[48px]">
-            <label className="block text-[31px] font-bold text-[#159e98]">
+          <div className="mt-[19px]">
+            <label className="block text-[20px] font-bold text-[#159e98]">
               <span className="text-[#c62828]">*</span>
               Name of the complainant
             </label>
 
             <input
               type="text"
-              defaultValue="Sunit"
-              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] bg-[#eaf0fc] px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+              defaultValue=""
+              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] px-[2px] text-[29px] font-normal text-[#111111] outline-none"
             />
           </div>
 
           {/* Mobile */}
-          <div className="mt-[82px]">
-            <label className="block text-[31px] font-bold text-[#159e98]">
+          <div className="mt-[19px]">
+            <label className="block text-[20px] font-bold text-[#159e98]">
               <span className="text-[#c62828]">*</span>
               Mobile Number
             </label>
@@ -95,8 +92,8 @@ export default function App() {
           </div>
 
           {/* Email */}
-          <div className="mt-[82px]">
-            <label className="block text-[31px] font-bold text-[#159e98]">
+          <div className="mt-[19px]">
+            <label className="block text-[20px] font-bold text-[#159e98]">
               E-mail
             </label>
 
@@ -107,10 +104,10 @@ export default function App() {
           </div>
 
           {/* Complaint category */}
-          <div className="mt-[82px]">
+          <div className="mt-[19px]">
             <label
               htmlFor="category"
-              className="block text-[31px] font-bold text-[#159e98]"
+              className="block text-[20px] font-bold text-[#159e98]"
             >
               <span className="text-[#c62828]">*</span>
               Complainant Category
@@ -164,10 +161,10 @@ export default function App() {
           </div>
 
           {/* State */}
-          <div className="mt-[82px]">
+          <div className="mt-[19px]">
             <label
               htmlFor="state"
-              className="block text-[31px] font-bold text-[#159e98]"
+              className="block text-[20px] font-bold text-[#159e98]"
             >
               <span className="text-[#c62828]">*</span>
               Complainant’s State of residence
