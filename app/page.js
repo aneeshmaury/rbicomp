@@ -1,67 +1,269 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+export default function App() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-[#f8f1d8] font-sans text-[#111111]">
+      {/* Demo header */}
+      <header className="bg-white">
+        <div className="flex min-h-[200px] items-center justify-center px-6">
+          <div className="text-center">
+            <div className="mb-2 text-[38px] font-bold tracking-wide text-[#111111]">
+              COMPLAINT PORTAL
+            </div>
+
+            <div className="text-[22px] font-medium text-[#555555]">
+              Complaint Management System
+            </div>
+
+            <div className="mt-1 text-[20px] text-[#555555]">
+              शिकायत प्रबंध प्रणाली
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+
+        {/* Teal banner */}
+        <div className="relative h-[205px] bg-[#11aaa2]">
+          <div className="absolute right-[25px] top-[18px] text-right text-white">
+            <div className="text-[27px] font-normal">
+              Complaint Management System
+            </div>
+
+            <div className="mt-1 text-[23px]">
+              शिकायत प्रबंध प्रणाली
+            </div>
+          </div>
+
+          <div className="absolute right-[25px] top-[105px] flex gap-[5px]">
+            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[28px] text-[#24516a]">
+              A
+            </div>
+
+            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[28px] text-[#111111]">
+              A
+            </div>
+
+            <div className="flex h-[50px] w-[50px] items-center justify-center bg-white text-[28px] text-[#111111]">
+              A
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Main content */}
+      <main className="mx-auto w-full max-w-[825px] px-[32px] py-[34px]">
+        <div className="bg-white px-[40px] pb-[50px] pt-[40px]">
+
+          {/* Section heading */}
+          <div className="flex h-[92px] items-center justify-center bg-[#11aaa2]">
+            <h1 className="text-center text-[45px] font-medium text-white">
+              Complainant Details
+            </h1>
+          </div>
+
+          {/* OTP status */}
+          <div className="mt-[42px] text-[28px] font-normal text-[#c62828]">
+            OTP is Successfully verified.
+          </div>
+
+          {/* Name */}
+          <div className="mt-[48px]">
+            <label className="block text-[31px] font-bold text-[#159e98]">
+              <span className="text-[#c62828]">*</span>
+              Name of the complainant
+            </label>
+
+            <input
+              type="text"
+              defaultValue="Sunit"
+              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] bg-[#eaf0fc] px-[2px] text-[29px] font-normal text-[#111111] outline-none"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+
+          {/* Mobile */}
+          <div className="mt-[82px]">
+            <label className="block text-[31px] font-bold text-[#159e98]">
+              <span className="text-[#c62828]">*</span>
+              Mobile Number
+            </label>
+
+            <input
+              type="text"
+              defaultValue="XXXXXX6759"
+              readOnly
+              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+            />
+          </div>
+
+          {/* Email */}
+          <div className="mt-[82px]">
+            <label className="block text-[31px] font-bold text-[#159e98]">
+              E-mail
+            </label>
+
+            <input
+              type="email"
+              className="mt-[4px] h-[72px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+            />
+          </div>
+
+          {/* Complaint category */}
+          <div className="mt-[82px]">
+            <label
+              htmlFor="category"
+              className="block text-[31px] font-bold text-[#159e98]"
+            >
+              <span className="text-[#c62828]">*</span>
+              Complainant Category
+            </label>
+
+            <div className="relative">
+              <select
+                id="category"
+                defaultValue=""
+                className="mt-[4px] h-[72px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+              >
+                <option value="" disabled>
+                  Select
+                </option>
+
+                <option value="individual">
+                  Individual
+                </option>
+
+                <option value="business">
+                  Business
+                </option>
+
+                <option value="company">
+                  Company
+                </option>
+
+                <option value="other">
+                  Other
+                </option>
+              </select>
+
+              <div className="pointer-events-none absolute right-[10px] top-[27px]">
+                <svg
+                  width="28"
+                  height="18"
+                  viewBox="0 0 28 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 3L14 14L25 3"
+                    stroke="#888888"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* State */}
+          <div className="mt-[82px]">
+            <label
+              htmlFor="state"
+              className="block text-[31px] font-bold text-[#159e98]"
+            >
+              <span className="text-[#c62828]">*</span>
+              Complainant’s State of residence
+            </label>
+
+            <div className="relative">
+              <select
+                id="state"
+                defaultValue=""
+                className="mt-[4px] h-[72px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[29px] font-normal text-[#111111] outline-none"
+              >
+                <option value="" disabled>
+                  Select
+                </option>
+
+                <option value="andhra-pradesh">
+                  Andhra Pradesh
+                </option>
+
+                <option value="bihar">
+                  Bihar
+                </option>
+
+                <option value="delhi">
+                  Delhi
+                </option>
+
+                <option value="gujarat">
+                  Gujarat
+                </option>
+
+                <option value="haryana">
+                  Haryana
+                </option>
+
+                <option value="karnataka">
+                  Karnataka
+                </option>
+
+                <option value="kerala">
+                  Kerala
+                </option>
+
+                <option value="madhya-pradesh">
+                  Madhya Pradesh
+                </option>
+
+                <option value="maharashtra">
+                  Maharashtra
+                </option>
+
+                <option value="odisha">
+                  Odisha
+                </option>
+
+                <option value="rajasthan">
+                  Rajasthan
+                </option>
+
+                <option value="tamil-nadu">
+                  Tamil Nadu
+                </option>
+
+                <option value="telangana">
+                  Telangana
+                </option>
+
+                <option value="uttar-pradesh">
+                  Uttar Pradesh
+                </option>
+
+                <option value="west-bengal">
+                  West Bengal
+                </option>
+              </select>
+
+              <div className="pointer-events-none absolute right-[10px] top-[27px]">
+                <svg
+                  width="28"
+                  height="18"
+                  viewBox="0 0 28 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 3L14 14L25 3"
+                    stroke="#888888"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
         </div>
       </main>
     </div>
