@@ -5,7 +5,7 @@ export default function App() {
     <div className="min-h-screen bg-[#f8f1d8] font-sans text-[#111111]">
       {/* Demo header */}
       <header className="bg-white">
-       <div className="flex mb-15 py-5 items-center justify-center px-2">
+       <div className="flex mb-15 py-3 items-center justify-center px-2">
   <div className="flex w-full max-w-[700px] items-center gap-[10px]" >
     
     {/* Left image */}
@@ -34,7 +34,7 @@ export default function App() {
 </div>
 
         {/* Teal banner */}
-        <div className="relative mt-[-65px] h-[130px] bg-[#11aaa2]">
+        <div className="relative mt-[-65px] h-[120px] bg-[#11aaa2]">
           <div className="absolute right-[25px] top-[3px] text-right text-white">
             <div className="text-[15px] font-normal">
               Complaint Management System
@@ -46,15 +46,15 @@ export default function App() {
           </div>
 
           <div className="absolute right-[25px] top-[65px] flex gap-[5px]">
-            <div className="flex h-[35px] w-[35px] items-center justify-center bg-white text-[20px] text-[#24516a]">
+            <div className="flex h-[30px] w-[30px] items-center justify-center bg-white text-[20px] text-[#24516a]">
               A
             </div>
 
-            <div className="flex h-[35px] w-[35px] items-center justify-center bg-white text-[25px] text-[#111111]">
+            <div className="flex h-[30px] w-[30px] items-center justify-center bg-white text-[25px] text-[#111111]">
               A
             </div>
 
-            <div className="flex h-[35px] w-[35px] items-center justify-center bg-white text-[30px] text-[#111111]">
+            <div className="flex h-[30px] w-[30px] items-center justify-center bg-white text-[30px] text-[#111111]">
               A
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function App() {
 
             <input
               type="text"
-              defaultValue="XXXXXX6759"
+              defaultValue=""
               readOnly
               className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
