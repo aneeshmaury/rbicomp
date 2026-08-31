@@ -5,33 +5,31 @@ export default function App() {
     <div className="min-h-screen bg-[#f8f1d8] font-sans text-[#111111]">
       {/* Demo header */}
       <header className="bg-white">
-       <div className="flex mb-15 py-3 items-center justify-center px-2">
-  <div className="flex w-full max-w-[700px] items-center gap-[10px]" >
-    
-    {/* Left image */}
-    <div className="flex-shrink-0">
-      <img
-        src="https://i.ibb.co/G3cbztWd/Chat-GPT-Image-Aug-26-2026-07-30-32-AM.png"
-        alt="Demo emblem"
-        className="h-[80px] w-[115px] object-contain"
-      />
-    </div>
+        <div className="flex mb-15 py-3 items-center justify-center px-2">
+          <div className="flex w-full max-w-[700px] items-center gap-[10px]">
 
-    {/* Right side text */}
-    <div className="text-left">
-      <div className="text-[20px] underline font-bold tracking-wide text-[#111111]">
-        शिकायत प्रबंध प्रणाली
-      </div>
+            {/* Left image */}
+            <div className="flex-shrink-0">
+              <img
+                src="https://i.ibb.co/G3cbztWd/Chat-GPT-Image-Aug-26-2026-07-30-32-AM.png"
+                alt="Demo emblem"
+                className="h-[80px] w-[115px] object-contain"
+              />
+            </div>
 
-      <div className="mt-[5px] text-[20px] underline font-bold tracking-wide text-[#111111]">
-        RESERVE BANK OF INDIA
-      </div>
+            {/* Right side text */}
+            <div className="text-left">
+              <div className="text-[20px] underline font-bold tracking-wide text-[#111111]">
+                शिकायत प्रबंध प्रणाली
+              </div>
 
-    
-    </div>
+              <div className="mt-[5px] text-[20px] underline font-bold tracking-wide text-[#111111]">
+                RESERVE BANK OF INDIA
+              </div>
+            </div>
 
-  </div>
-</div>
+          </div>
+        </div>
 
         {/* Teal banner */}
         <div className="relative mt-[-65px] h-[120px] bg-[#11aaa2]">
@@ -101,7 +99,6 @@ export default function App() {
             <input
               type="text"
               defaultValue=""
-            
               className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
           </div>
@@ -253,6 +250,413 @@ export default function App() {
 
                 <option value="west-bengal">
                   West Bengal
+                </option>
+              </select>
+
+              <div className="pointer-events-none absolute right-[10px] top-[27px]">
+                <svg
+                  width="28"
+                  height="18"
+                  viewBox="0 0 28 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 3L14 14L25 3"
+                    stroke="#888888"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Bank Name */}
+          <div className="mt-[19px]">
+            <label
+              htmlFor="bankName"
+              className="block text-[20px] font-bold text-[#159e98]"
+            >
+              <span className="text-[#c62828]">*</span>
+              Bank Name
+            </label>
+
+            <div className="relative">
+              <select
+                id="bankName"
+                defaultValue=""
+                className="mt-[4px] h-[65px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              >
+                <option value="" disabled>
+                  Select Bank
+                </option>
+
+                {/* Public Sector Banks */}
+                <option value="state-bank-of-india">State Bank of India</option>
+                <option value="bank-of-baroda">Bank of Baroda</option>
+                <option value="bank-of-india">Bank of India</option>
+                <option value="bank-of-maharashtra">Bank of Maharashtra</option>
+                <option value="canara-bank">Canara Bank</option>
+                <option value="central-bank-of-india">
+                  Central Bank of India
+                </option>
+                <option value="indian-bank">Indian Bank</option>
+                <option value="indian-overseas-bank">
+                  Indian Overseas Bank
+                </option>
+                <option value="punjab-and-sind-bank">
+                  Punjab &amp; Sind Bank
+                </option>
+                <option value="punjab-national-bank">
+                  Punjab National Bank
+                </option>
+                <option value="uco-bank">UCO Bank</option>
+                <option value="union-bank-of-india">
+                  Union Bank of India
+                </option>
+
+                {/* Domestic Private Sector Banks */}
+                <option value="axis-bank-limited">Axis Bank Limited</option>
+                <option value="bandhan-bank-limited">
+                  Bandhan Bank Limited
+                </option>
+                <option value="csb-bank-limited">CSB Bank Limited</option>
+                <option value="city-union-bank-limited">
+                  City Union Bank Limited
+                </option>
+                <option value="dcb-bank-limited">DCB Bank Limited</option>
+                <option value="dhanlaxmi-bank-limited">
+                  Dhanlaxmi Bank Limited
+                </option>
+                <option value="federal-bank-limited">
+                  Federal Bank Limited
+                </option>
+                <option value="hdfc-bank-limited">HDFC Bank Limited</option>
+                <option value="icici-bank-limited">ICICI Bank Limited</option>
+                <option value="indusind-bank-limited">
+                  IndusInd Bank Limited
+                </option>
+                <option value="idfc-first-bank-limited">
+                  IDFC FIRST Bank Limited
+                </option>
+                <option value="jammu-and-kashmir-bank-limited">
+                  Jammu &amp; Kashmir Bank Limited
+                </option>
+                <option value="karnataka-bank-limited">
+                  Karnataka Bank Limited
+                </option>
+                <option value="karur-vysya-bank-limited">
+                  Karur Vysya Bank Limited
+                </option>
+                <option value="kotak-mahindra-bank-limited">
+                  Kotak Mahindra Bank Limited
+                </option>
+                <option value="nainital-bank-limited">
+                  Nainital Bank Limited
+                </option>
+                <option value="rbl-bank-limited">RBL Bank Limited</option>
+                <option value="south-indian-bank-limited">
+                  South Indian Bank Limited
+                </option>
+                <option value="tamilnad-mercantile-bank-limited">
+                  Tamilnad Mercantile Bank Limited
+                </option>
+                <option value="yes-bank-limited">YES Bank Limited</option>
+                <option value="idbi-bank-limited">IDBI Bank Limited</option>
+
+                {/* Small Finance Banks */}
+                <option value="au-small-finance-bank-limited">
+                  Au Small Finance Bank Limited
+                </option>
+                <option value="capital-small-finance-bank-limited">
+                  Capital Small Finance Bank Limited
+                </option>
+                <option value="equitas-small-finance-bank-limited">
+                  Equitas Small Finance Bank Limited
+                </option>
+                <option value="esaf-small-finance-bank-limited">
+                  ESAF Small Finance Bank Limited
+                </option>
+                <option value="suryoday-small-finance-bank-limited">
+                  Suryoday Small Finance Bank Limited
+                </option>
+                <option value="ujjivan-small-finance-bank-limited">
+                  Ujjivan Small Finance Bank Limited
+                </option>
+                <option value="utkarsh-small-finance-bank-limited">
+                  Utkarsh Small Finance Bank Limited
+                </option>
+                <option value="slice-small-finance-bank-limited">
+                  slice Small Finance Bank Limited
+                </option>
+                <option value="jana-small-finance-bank-limited">
+                  Jana Small finance Bank Limited
+                </option>
+                <option value="shivalik-small-finance-bank-limited">
+                  Shivalik Small Finance Bank Limited
+                </option>
+                <option value="unity-small-finance-bank-limited">
+                  Unity Small Finance Bank Limited
+                </option>
+
+                {/* Payments Banks */}
+                <option value="india-post-payments-bank-limited">
+                  India Post Payments Bank Limited
+                </option>
+                <option value="fino-payments-bank-limited">
+                  Fino Payments Bank Limited
+                </option>
+                <option value="paytm-payments-bank-limited">
+                  Paytm Payments Bank Limited
+                </option>
+                <option value="airtel-payments-bank-limited">
+                  Airtel Payments Bank Limited
+                </option>
+                <option value="nsdl-payments-bank-limited">
+                  NSDL Payments Bank Limited
+                </option>
+
+                {/* Regional Rural Banks */}
+                <option value="andhra-pradesh-grameena-bank">
+                  Andhra Pradesh Grameena Bank
+                </option>
+                <option value="assam-gramin-bank">
+                  Assam Gramin Bank
+                </option>
+                <option value="arunachal-pradesh-rural-bank">
+                  Arunachal Pradesh Rural Bank
+                </option>
+                <option value="bihar-gramin-bank">
+                  Bihar Gramin Bank
+                </option>
+                <option value="chhattisgarh-gramin-bank">
+                  Chhattisgarh Gramin Bank
+                </option>
+                <option value="gujarat-gramin-bank">
+                  Gujarat Gramin Bank
+                </option>
+                <option value="haryana-gramin-bank">
+                  Haryana Gramin Bank
+                </option>
+                <option value="himachal-pradesh-gramin-bank">
+                  Himachal Pradesh Gramin Bank
+                </option>
+                <option value="jharkhand-gramin-bank">
+                  Jharkhand Gramin Bank
+                </option>
+                <option value="jammu-and-kashmir-grameen-bank">
+                  Jammu and Kashmir Grameen Bank
+                </option>
+                <option value="karnataka-grameena-bank">
+                  Karnataka Grameena Bank
+                </option>
+                <option value="kerala-grameena-bank">
+                  Kerala Grameena Bank
+                </option>
+                <option value="maharashtra-gramin-bank">
+                  Maharashtra Gramin Bank
+                </option>
+                <option value="madhya-pradesh-gramin-bank">
+                  Madhya Pradesh Gramin Bank
+                </option>
+                <option value="manipur-rural-bank">
+                  Manipur Rural Bank
+                </option>
+                <option value="meghalaya-rural-bank">
+                  Meghalaya Rural Bank
+                </option>
+                <option value="mizoram-rural-bank">
+                  Mizoram Rural Bank
+                </option>
+                <option value="nagaland-rural-bank">
+                  Nagaland Rural Bank
+                </option>
+                <option value="odisha-grameen-bank">
+                  Odisha Grameen Bank
+                </option>
+                <option value="punjab-gramin-bank">
+                  Punjab Gramin Bank
+                </option>
+                <option value="puducherry-grama-bank">
+                  Puducherry Grama Bank
+                </option>
+                <option value="rajasthan-gramin-bank">
+                  Rajasthan Gramin Bank
+                </option>
+                <option value="tamil-nadu-grama-bank">
+                  Tamil Nadu Grama Bank
+                </option>
+                <option value="telangana-grameena-bank">
+                  Telangana Grameena Bank
+                </option>
+                <option value="tripura-gramin-bank">
+                  Tripura Gramin Bank
+                </option>
+                <option value="uttar-pradesh-gramin-bank">
+                  Uttar Pradesh Gramin Bank
+                </option>
+                <option value="uttarakhand-gramin-bank">
+                  Uttarakhand Gramin Bank
+                </option>
+                <option value="west-bengal-gramin-bank">
+                  West Bengal Gramin Bank
+                </option>
+
+                {/* Foreign Banks */}
+                <option value="ab-bank-plc">AB Bank PLC</option>
+                <option value="american-express-banking-corporation">
+                  American Express Banking Corporation
+                </option>
+                <option value="australia-and-new-zealand-banking-group-ltd">
+                  Australia and New Zealand Banking Group Ltd.
+                </option>
+                <option value="barclays-bank-plc">
+                  Barclays Bank Plc.
+                </option>
+                <option value="bank-of-america-national-association">
+                  Bank of America National Association
+                </option>
+                <option value="bank-of-bahrain-and-kuwait-bsc">
+                  Bank of Bahrain and Kuwait B.S.C.
+                </option>
+                <option value="bank-of-ceylon">
+                  Bank of Ceylon
+                </option>
+                <option value="bank-of-china-limited">
+                  Bank of China Limited
+                </option>
+                <option value="bank-of-nova-scotia">
+                  Bank of Nova Scotia
+                </option>
+                <option value="bnp-paribas">BNP Paribas</option>
+                <option value="citibank-na">Citibank N.A.</option>
+                <option value="cooperatieve-rabobank-ua">
+                  Cooperatieve Rabobank U.A./ Coöperatieve Centrale
+                  Raiffeisen-Boerenleenbank B.A.
+                </option>
+                <option value="credit-agricole-corporate-and-investment-bank">
+                  Credit Agricole Corporate and Investment Bank
+                </option>
+                <option value="ctbc-bank-co-ltd">
+                  CTBC Bank Co., Ltd.
+                </option>
+                <option value="dbs-bank-india-limited">
+                  DBS Bank India Limited
+                </option>
+                <option value="deutsche-bank-ag">
+                  Deutsche Bank A.G.
+                </option>
+                <option value="doha-bank-qpsc">
+                  Doha Bank Q.P.S.C
+                </option>
+                <option value="emirates-nbd-bank-pjsc">
+                  Emirates NBD Bank P.J.S.C
+                </option>
+                <option value="first-abu-dhabi-bank-pjsc">
+                  First Abu Dhabi Bank PJSC
+                </option>
+                <option value="firstrand-bank-limited">
+                  FirstRand Bank Limited
+                </option>
+                <option value="hong-kong-and-shanghai-banking-corporation-limited">
+                  Hong Kong and Shanghai Banking Corporation Limited
+                </option>
+                <option value="industrial-and-commercial-bank-of-china">
+                  Industrial and Commercial Bank of China
+                </option>
+                <option value="industrial-bank-of-korea">
+                  Industrial Bank of Korea
+                </option>
+                <option value="jp-morgan-chase-bank-na">
+                  J.P. Morgan Chase Bank N.A.
+                </option>
+                <option value="jsc-vtb-bank">
+                  JSC VTB Bank
+                </option>
+                <option value="keb-hana-bank">
+                  KEB Hana Bank
+                </option>
+                <option value="kookmin-bank">
+                  Kookmin Bank
+                </option>
+                <option value="mashreqbank-psc">
+                  Mashreqbank P.S.C
+                </option>
+                <option value="mizuho-bank-ltd">
+                  Mizuho Bank Ltd.
+                </option>
+                <option value="mufg-bank-ltd">
+                  MUFG Bank, Ltd.
+                </option>
+                <option value="natwest-markets-plc">
+                  NatWest Markets Plc
+                </option>
+                <option value="nonghyup-bank">
+                  NongHyup Bank
+                </option>
+                <option value="pt-bank-maybank-indonesia-tbk">
+                  PT Bank Maybank Indonesia TBK
+                </option>
+                <option value="qatar-national-bank-qpsc">
+                  Qatar National Bank (Q.P.S.C.)
+                </option>
+                <option value="sberbank">
+                  Sberbank
+                </option>
+                <option value="sbm-bank-india-limited">
+                  SBM Bank (India) Limited
+                </option>
+                <option value="shinhan-bank">
+                  Shinhan Bank
+                </option>
+                <option value="societe-generale">
+                  Societe Generale
+                </option>
+                <option value="sonali-bank-plc">
+                  Sonali Bank PLC
+                </option>
+                <option value="standard-chartered-bank">
+                  Standard Chartered Bank
+                </option>
+                <option value="sumitomo-mitsui-banking-corporation">
+                  Sumitomo Mitsui Banking Corporation
+                </option>
+                <option value="united-overseas-bank-limited">
+                  United Overseas Bank Limited
+                </option>
+                <option value="ubs-ag">
+                  UBS AG
+                </option>
+                <option value="woori-bank">
+                  Woori Bank
+                </option>
+
+                {/* Demo / Sample Banks */}
+                <option value="demo-bank">
+                  Demo Bank
+                </option>
+                <option value="sample-national-bank">
+                  Sample National Bank
+                </option>
+                <option value="test-commercial-bank">
+                  Test Commercial Bank
+                </option>
+                <option value="example-private-bank">
+                  Example Private Bank
+                </option>
+                <option value="demo-cooperative-bank">
+                  Demo Cooperative Bank
+                </option>
+                <option value="sample-rural-bank">
+                  Sample Rural Bank
+                </option>
+                <option value="example-payments-bank">
+                  Example Payments Bank
+                </option>
+                <option value="test-small-finance-bank">
+                  Test Small Finance Bank
                 </option>
               </select>
 
