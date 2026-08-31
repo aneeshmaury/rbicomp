@@ -2,8 +2,11 @@
 
 import React, { useState } from "react";
 
+
 export default function App() {
   const [showThankYou, setShowThankYou] = useState(false);
+  const [name, setName] = useState("");
+
 
   if (showThankYou) {
     return (
@@ -19,13 +22,12 @@ export default function App() {
             </h1>
 
             {/* Dear */}
-            <div className="text-[15px] leading-[1.65] mb-[25px]">
-              Dear{" "}
-              <span className="font-bold">
-                Fraud transaction
-              </span>
-            </div>
-
+           <div className="text-[15px] leading-[1.65] mb-[25px]">
+  Dear{" "}
+  <span className="font-bold">
+    {name || "Demo User"}
+  </span>
+</div>
             {/* Point 1 */}
             <div className="text-[15px] leading-[1.62] mb-[26px]">
               <span className="font-normal">1. </span>
@@ -191,11 +193,12 @@ export default function App() {
               Name of the complainant
             </label>
 
-            <input
-              type="text"
-              defaultValue=""
-              className="mt-[1px] h-[30px] w-full border-b-[2px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
-            />
+          <input
+  type="text"
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  className="mt-[1px] h-[30px] w-full border-b-[2px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+/>
 
           </div>
 
