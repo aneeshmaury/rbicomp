@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState } from "react";
 
 export default function App() {
@@ -73,7 +74,7 @@ export default function App() {
             <div className="flex justify-center mb-[66px]">
               <button
                 type="button"
-                className="text-[#11aaa2] text-[25px] font-semibold hover:underline cursor-pointer"
+                className="text-[#11aaa2] text-[17px] font-semibold hover:underline cursor-pointer"
               >
                 Download PDF
               </button>
@@ -128,32 +129,32 @@ export default function App() {
         </div>
 
         {/* Teal banner */}
-        <div className="relative mt-[-65px] h-[120px] bg-[#11aaa2]">
+        <div className="relative mt-[-65px] h-[100px] bg-[#11aaa2]">
 
-          <div className="absolute right-[25px] top-[3px] text-right text-white">
+          <div className="absolute right-[25px] top-[1px] text-right text-white">
 
-            <div className="text-[15px] font-normal">
+            <div className="text-[13px] font-normal">
               Complaint Management System
             </div>
 
-            <div className="mt-1 text-[15px]">
+            <div className="mt-1 text-[13px]">
               शिकायत प्रबंध प्रणाली
             </div>
 
           </div>
 
           {/* Font buttons */}
-          <div className="absolute right-[25px] top-[65px] flex gap-[5px]">
+          <div className="absolute right-[25px] top-[50px] flex gap-[5px]">
 
-            <div className="flex h-[30px] w-[30px] items-center justify-center bg-white text-[20px] text-[#24516a]">
+            <div className="flex h-[25px] w-[25px] items-center justify-center bg-white text-[15px] text-[#24516a]">
               A
             </div>
 
-            <div className="flex h-[30px] w-[30px] items-center justify-center bg-white text-[25px] text-[#111111]">
+            <div className="flex h-[25px] w-[25px] items-center justify-center bg-white text-[20px] text-[#111111]">
               A
             </div>
 
-            <div className="flex h-[30px] w-[30px] items-center justify-center bg-white text-[30px] text-[#111111]">
+            <div className="flex h-[25px] w-[25px] items-center justify-center bg-white text-[25px] text-[#111111]">
               A
             </div>
 
@@ -169,9 +170,9 @@ export default function App() {
         <div className="bg-white px-[40px] pb-[50px] pt-[40px]">
 
           {/* Section heading */}
-          <div className="flex h-[50px] w-[300px] items-center justify-center bg-[#11aaa2]">
+          <div className="flex h-[40px] w-[300px] items-center justify-center bg-[#11aaa2]">
 
-            <h1 className="text-center text-[25px] font-medium text-white">
+            <h1 className="text-center text-[22px] font-medium text-white">
               Complainant Details
             </h1>
 
@@ -193,7 +194,7 @@ export default function App() {
             <input
               type="text"
               defaultValue=""
-              className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              className="mt-[1px] h-[30px] w-full border-b-[4px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
 
           </div>
@@ -209,7 +210,7 @@ export default function App() {
             <input
               type="text"
               defaultValue=""
-              className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              className="mt-[1px] h-[30px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
 
           </div>
@@ -223,7 +224,7 @@ export default function App() {
 
             <input
               type="email"
-              className="mt-[4px] h-[65px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              className="mt-[1px] h-[30px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
 
           </div>
@@ -244,7 +245,7 @@ export default function App() {
               <select
                 id="category"
                 defaultValue=""
-                className="mt-[4px] h-[65px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+                className="mt-[1px] h-[30px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
 
                 <option value="" disabled>
@@ -269,7 +270,7 @@ export default function App() {
 
               </select>
 
-              <div className="pointer-events-none absolute right-[10px] top-[27px]">
+              <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
                 <svg
                   width="28"
@@ -311,7 +312,7 @@ export default function App() {
               <select
                 id="state"
                 defaultValue=""
-                className="mt-[4px] h-[65px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+                className="mt-[1px] h-[30px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
 
                 <option value="" disabled>
@@ -380,7 +381,7 @@ export default function App() {
 
               </select>
 
-              <div className="pointer-events-none absolute right-[10px] top-[27px]">
+              <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
                 <svg
                   width="28"
@@ -422,10 +423,9 @@ export default function App() {
               <select
                 id="bankName"
                 defaultValue=""
-                className="mt-[4px] h-[65px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+                className="mt-[1px] h-[30px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
 
-                {/* Placeholder */}
                 <option value="" disabled>
                   Select Bank
                 </option>
@@ -956,8 +956,7 @@ export default function App() {
 
               </select>
 
-              {/* Dropdown Arrow */}
-              <div className="pointer-events-none absolute right-[10px] top-[27px]">
+              <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
                 <svg
                   width="28"
