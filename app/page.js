@@ -186,7 +186,7 @@ export default function App() {
           {/* Name */}
           <div className="mt-[19px]">
 
-            <label className="block text-[20px] font-bold text-[#159e98]">
+            <label className="block text-[18px] font-bold text-[#159e98]">
               <span className="text-[#c62828]">*</span>
               Name of the complainant
             </label>
@@ -194,7 +194,7 @@ export default function App() {
             <input
               type="text"
               defaultValue=""
-              className="mt-[1px] h-[30px] w-full border-b-[4px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              className="mt-[1px] h-[30px] w-full border-b-[2px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
 
           </div>
@@ -202,7 +202,7 @@ export default function App() {
           {/* Mobile */}
           <div className="mt-[19px]">
 
-            <label className="block text-[20px] font-bold text-[#159e98]">
+            <label className="block text-[18px] font-bold text-[#159e98]">
               <span className="text-[#c62828]">*</span>
               Mobile Number
             </label>
@@ -210,7 +210,7 @@ export default function App() {
             <input
               type="text"
               defaultValue=""
-              className="mt-[1px] h-[30px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              className="mt-[1px] h-[30px] w-full border-b-[2px] border-[#999999] px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
 
           </div>
@@ -218,13 +218,13 @@ export default function App() {
           {/* Email */}
           <div className="mt-[19px]">
 
-            <label className="block text-[20px] font-bold text-[#159e98]">
+            <label className="block text-[18px] font-bold text-[#159e98]">
               E-mail
             </label>
 
             <input
               type="email"
-              className="mt-[1px] h-[30px] w-full border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              className="mt-[1px] h-[30px] w-full border-b-[2px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
             />
 
           </div>
@@ -234,7 +234,7 @@ export default function App() {
 
             <label
               htmlFor="category"
-              className="block text-[20px] font-bold text-[#159e98]"
+              className="block text-[18px] font-bold text-[#159e98]"
             >
               <span className="text-[#c62828]">*</span>
               Complainant Category
@@ -245,7 +245,7 @@ export default function App() {
               <select
                 id="category"
                 defaultValue=""
-                className="mt-[1px] h-[30px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+                className="mt-[1px] h-[30px] w-full appearance-none border-b-[2px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
 
                 <option value="" disabled>
@@ -273,7 +273,7 @@ export default function App() {
               <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
                 <svg
-                  width="28"
+                  width="20"
                   height="18"
                   viewBox="0 0 28 18"
                   fill="none"
@@ -301,7 +301,7 @@ export default function App() {
 
             <label
               htmlFor="state"
-              className="block text-[20px] font-bold text-[#159e98]"
+              className="block text-[18px] font-bold text-[#159e98]"
             >
               <span className="text-[#c62828]">*</span>
               Complainant’s State of residence
@@ -312,7 +312,7 @@ export default function App() {
               <select
                 id="state"
                 defaultValue=""
-                className="mt-[1px] h-[30px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+                className="mt-[1px] h-[30px] w-full appearance-none border-b-[2px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
 
                 <option value="" disabled>
@@ -384,7 +384,7 @@ export default function App() {
               <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
                 <svg
-                  width="28"
+                  width="20"
                   height="18"
                   viewBox="0 0 28 18"
                   fill="none"
@@ -412,7 +412,7 @@ export default function App() {
 
             <label
               htmlFor="bankName"
-              className="block text-[20px] font-bold text-[#159e98]"
+              className="block text-[18px] font-bold text-[#159e98]"
             >
               <span className="text-[#c62828]">*</span>
               Bank Name
@@ -423,7 +423,7 @@ export default function App() {
               <select
                 id="bankName"
                 defaultValue=""
-                className="mt-[1px] h-[30px] w-full appearance-none border-b-[4px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+                className="mt-[1px] h-[30px] w-full appearance-none border-b-[2px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
               >
 
                 <option value="" disabled>
@@ -959,7 +959,7 @@ export default function App() {
               <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
                 <svg
-                  width="28"
+                  width="20"
                   height="18"
                   viewBox="0 0 28 18"
                   fill="none"
