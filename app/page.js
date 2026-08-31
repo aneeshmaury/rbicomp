@@ -203,7 +203,7 @@ export default function App() {
           <div className="mt-[19px]">
 
             <label className="block text-[18px] font-bold text-[#159e98]">
-              <span className="text-[#c62828]">*</span>
+              <span className="text-[#c62828]">* </span>
               Mobile Number
             </label>
 
