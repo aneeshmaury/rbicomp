@@ -13,12 +13,12 @@ export default function App() {
           <div className="w-full max-w-[825px] bg-[#f5f5f5] px-[40px] py-[48px]">
 
             {/* Heading */}
-            <h1 className="text-center text-[#356aa5] text-[42px] font-semibold mb-[34px]">
+            <h1 className="text-center text-[#356aa5] text-[25px] font-semibold mb-[34px]">
               Thank You!
             </h1>
 
             {/* Dear */}
-            <div className="text-[24px] leading-[1.65] mb-[25px]">
+            <div className="text-[15px] leading-[1.65] mb-[25px]">
               Dear{" "}
               <span className="font-bold">
                 Fraud transaction
@@ -26,7 +26,7 @@ export default function App() {
             </div>
 
             {/* Point 1 */}
-            <div className="text-[23px] leading-[1.62] mb-[26px]">
+            <div className="text-[15px] leading-[1.62] mb-[26px]">
               <span className="font-normal">1. </span>
               Please refer to your representation alleging deficiency in
               service on the part of{" "}
@@ -36,7 +36,7 @@ export default function App() {
             </div>
 
             {/* Point 2 */}
-            <div className="text-[23px] leading-[1.62] mb-[27px]">
+            <div className="text-[15px] leading-[1.62] mb-[27px]">
               <span>2. </span>
               As you have indicated{" "}
               <span className="font-bold">“No”</span> in response to the
@@ -58,7 +58,7 @@ export default function App() {
             </div>
 
             {/* Point 3 */}
-            <div className="text-[23px] leading-[1.62] mb-[62px]">
+            <div className="text-[15px] leading-[1.62] mb-[62px]">
               <span>3. </span>
               Accordingly, we regret to inform you that your present
               grievance against{" "}
@@ -80,7 +80,7 @@ export default function App() {
             </div>
 
             {/* Regards */}
-            <div className="text-[23px] leading-[1.65]">
+            <div className="text-[15px] leading-[1.65]">
               <div>Regards,</div>
               <div className="font-normal">
                 RBI CMS Team
