@@ -253,7 +253,7 @@ export default function App() {
                 </option>
 
                 <option value="individual">
-                  Individual
+                  Individual - Business
                 </option>
 
                 <option value="business">
@@ -383,29 +383,65 @@ export default function App() {
 
               <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
-                <svg
-                  width="20"
-                  height="18"
-                  viewBox="0 0 28 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-
-                  <path
-                    d="M3 3L14 14L25 3"
-                    stroke="#888888"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-
-                </svg>
+               
 
               </div>
 
             </div>
 
           </div>
+
+<div className="mt-[19px]">
+
+            <label
+              htmlFor="category"
+              className="block text-[18px] font-bold text-[#159e98]"
+            >
+              <span className="text-[#c62828]">*</span>
+              Complainant's Distinct of residence
+            </label>
+
+            <div className="relative">
+
+              <select
+                id="category"
+                defaultValue=""
+                className="mt-[1px] h-[30px] w-full appearance-none border-b-[2px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+              >
+
+                <option value="" disabled>
+                  Select
+                </option>
+
+                <option value="individual">
+                  Individual - Business
+                </option>
+
+                <option value="business">
+                  Business
+                </option>
+
+                <option value="company">
+                  Company
+                </option>
+
+                <option value="other">
+                  Other
+                </option>
+
+              </select>
+
+              <div className="pointer-events-none absolute right-[10px] top-[6px]">
+
+            
+
+              </div>
+
+            </div>
+
+          </div>
+
+
 
           {/* Bank Name */}
           <div className="mt-[19px]">
@@ -415,7 +451,7 @@ export default function App() {
               className="block text-[18px] font-bold text-[#159e98]"
             >
               <span className="text-[#c62828]">*</span>
-              Bank Name
+              Entity Name 
             </label>
 
             <div className="relative">
@@ -958,23 +994,7 @@ export default function App() {
 
               <div className="pointer-events-none absolute right-[10px] top-[6px]">
 
-                <svg
-                  width="20"
-                  height="18"
-                  viewBox="0 0 28 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-
-                  <path
-                    d="M3 3L14 14L25 3"
-                    stroke="#888888"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-
-                </svg>
+            
 
               </div>
 
