@@ -172,13 +172,13 @@ export default function App() {
         <div className="bg-white px-[40px] pb-[50px] pt-[40px]">
 
           {/* Section heading */}
-          <div className="flex h-[40px] w-[300px] items-center justify-center bg-[#11aaa2]">
+      <div className="mx-auto flex h-[40px] w-[300px] items-center justify-center bg-[#11aaa2]">
 
-            <h1 className="text-center text-[22px] font-medium text-white">
-              Complainant Details
-            </h1>
+  <h1 className="text-center text-[22px] font-medium text-white">
+    Complainant Details
+  </h1>
 
-          </div>
+</div>
 
           {/* OTP status */}
           <div className="mt-[19px] text-[15px] font-normal text-[#c62828]">
