@@ -6,6 +6,11 @@ import React, { useState } from "react";
 export default function App() {
   const [showThankYou, setShowThankYou] = useState(false);
   const [name, setName] = useState("");
+  
+const [entityName, setEntityName] = useState("");
+
+const [entityDisplayName, setEntityDisplayName] = useState("");
+
 
 
   if (showThankYou) {
@@ -34,8 +39,8 @@ export default function App() {
               Please refer to your representation alleging deficiency in
               service on the part of{" "}
               <span className="font-bold uppercase">
-                AXIS BANK LIMITED
-              </span>
+  {entityDisplayName || "Demo Entity"}
+</span>
             </div>
 
             {/* Point 2 */}
@@ -54,9 +59,9 @@ export default function App() {
               to the Regulated Entity concerned, before making a complaint
               under the Scheme; this representation alleging deficiency in
               service on the part of{" "}
-              <span className="font-bold uppercase">
-                AXIS BANK LIMITED
-              </span>{" "}
+             <span className="font-bold uppercase">
+  {entityDisplayName || "Demo Entity"}
+</span>{" "}
               cannot be processed under the Scheme.
             </div>
 
@@ -66,7 +71,7 @@ export default function App() {
               Accordingly, we regret to inform you that your present
               grievance against{" "}
               <span className="font-bold uppercase">
-                AXIS BANK LIMITED
+                {entityDisplayName || "Demo Entity"}
               </span>{" "}
               cannot be registered under the Scheme. In case the response
               was furnished erroneously, you may submit a fresh complaint.
@@ -460,10 +465,16 @@ export default function App() {
             <div className="relative">
 
               <select
-                id="bankName"
-                defaultValue=""
-                className="mt-[1px] h-[30px] w-full appearance-none border-b-[2px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
-              >
+  id="bankName"
+  value={entityName}
+  onChange={(e) => {
+    setEntityName(e.target.value);
+    setEntityDisplayName(
+      e.target.options[e.target.selectedIndex].text
+    );
+  }}
+  className="mt-[1px] h-[30px] w-full appearance-none border-b-[2px] border-[#999999] bg-white px-[2px] text-[20px] font-normal text-[#111111] outline-none"
+>
 
                 <option value="" disabled>
                   Select Bank
@@ -598,6 +609,23 @@ export default function App() {
                 <option value="yes-bank-limited">
                   YES Bank Limited
                 </option>
+                {/* Payments Banks */}
+
+<option value="jio-payment-bank">
+  Jio Payment Bank
+</option>
+
+<option value="airtel-payment-bank">
+  Airtel Payment Bank
+</option>
+
+<option value="india-post-payments-bank-limited">
+  India Post Payments Bank Limited
+</option>
+
+<option value="fino-payments-bank-limited">
+  Fino Payments Bank Limited
+</option>
 
                 <option value="idbi-bank-limited">
                   IDBI Bank Limited
